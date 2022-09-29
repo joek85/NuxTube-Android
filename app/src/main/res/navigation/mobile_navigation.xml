@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_history">
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.joek.nuxtube.ui.search.SearchFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_search" />
+    <fragment android:id="@+id/nav_home"
+        android:name="com.joek.nuxtube.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment android:id="@+id/nav_history"
+        android:name="com.joek.nuxtube.ui.history.HistoryFragment"
+        tools:layout="@layout/fragment_history"/>
+</navigation>
